@@ -4,6 +4,7 @@
 
 {% block content %}
   <h2>Upload book</h2>
+  <h4><a href="{% url 'howtoindex' %}">How to insert index field?</a></h4>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form|crispy }}
